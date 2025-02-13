@@ -18,7 +18,7 @@ To edit this repository in MakeCode.
 * click on **Import** then click on **Import URL**
 * paste **https://github.com/bplab-dev/pxt-bplab-ultrasonic** and click import
 
-#### Metadata (used for search, rendering)
+#### Supported targets
 
 * for PXT/microbit
 
