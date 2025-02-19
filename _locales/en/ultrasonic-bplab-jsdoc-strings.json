@@ -1,0 +1,8 @@
+{
+  "ultrasonic": "Ultrasonic and ping utilities",
+  "ultrasonic.ping": "Send a ping and get the echo time (in microseconds) as a result",
+  "ultrasonic.ping|param|echo": "echo pin",
+  "ultrasonic.ping|param|maxCmDistance": "maximum distance in centimeters (default is 500)",
+  "ultrasonic.ping|param|trig": "tigger pin",
+  "ultrasonic.ping|param|unit": "desired conversion unit"
+}

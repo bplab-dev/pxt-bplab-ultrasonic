@@ -1,0 +1,8 @@
+{
+  "ultrasonic": "초음파 모듈",
+  "ultrasonic.ping": "초음파를 발생시킨 후 되돌아 오는 시간(마이크로초)를 결과로 보여줍니다",
+  "ultrasonic.ping|param|echo": "초음파 에코(echo) 핀",
+  "ultrasonic.ping|param|maxCmDistance": "측정 가능 최대 거리(기본값: 500cm)",
+  "ultrasonic.ping|param|trig": "초음파 트리거(trig) 핀",
+  "ultrasonic.ping|param|unit": "단위"
+}
