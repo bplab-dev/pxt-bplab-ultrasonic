@@ -1,7 +1,7 @@
 {
-  "PingUnit.Centimeters|block": "센티미터(cm)",
-  "PingUnit.Inches|block": "인치(inches)",
-  "PingUnit.MicroSeconds|block": "마이크로초(μs)",
+  "ultrasonic.PingUnit.Centimeters|block": "센티미터(cm)",
+  "ultrasonic.PingUnit.Inches|block": "인치(inches)",
+  "ultrasonic.PingUnit.MicroSeconds|block": "마이크로초(μs)",
   "ultrasonic.ping|block": "초음파\r\n|trig %trig\r\n|echo %echo\r\n|단위 %unit\r\n|측정",
   "ultrasonic|block": "초음파",
   "{id:category}Ultrasonic": "초음파"
