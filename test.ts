@@ -14,9 +14,9 @@ const ECHO_PIN = DigitalPin.P2;
 
 // Function to test ultrasonic sensor readings
 function testUltrasonic(): boolean {
-    let distanceCm = ultrasonic.ping(TRIG_PIN, ECHO_PIN, PingUnit.Centimeters);
-    let distanceInches = ultrasonic.ping(TRIG_PIN, ECHO_PIN, PingUnit.Inches);
-    let pulseTime = ultrasonic.ping(TRIG_PIN, ECHO_PIN, PingUnit.MicroSeconds);
+    let distanceCm = ultrasonic.ping(TRIG_PIN, ECHO_PIN, ultrasonic.PingUnit.Centimeters);
+    let distanceInches = ultrasonic.ping(TRIG_PIN, ECHO_PIN, ultrasonic.PingUnit.Inches);
+    let pulseTime = ultrasonic.ping(TRIG_PIN, ECHO_PIN, ultrasonic.PingUnit.MicroSeconds);
 
     // Check if values are within expected ranges
     let validCm = distanceCm > 0 && distanceCm < 500;  // HC-SR04 has max range of ~400-500cm
