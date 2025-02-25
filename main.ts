@@ -1,18 +1,21 @@
-enum PingUnit {
-    //% block="μs"
-    MicroSeconds,
-    //% block="cm"
-    Centimeters,
-    //% block="inches"
-    Inches
-}
-
 /**
  * Ultrasonic and ping utilities
  */
 //% color="#2c3e50" weight=1 icon="\uf0ad"
 //% block="Ultrasonic"
 namespace ultrasonic {
+    /**
+     * Ultrasonic Ping Unit
+     */
+    export enum PingUnit {
+        //% block="μs" enumval=0
+        MicroSeconds,
+        //% block="cm" enumval=1
+        Centimeters,
+        //% block="inches" enumval=2
+        Inches
+    }
+
     /**
      * Send a ping and get the echo time (in microseconds) as a result
      * @param trig Trigger pin
