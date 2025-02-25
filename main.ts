@@ -19,7 +19,7 @@ namespace ultrasonic {
      * @param echo Echo pin
      * @param unit Desired conversion unit
      */
-    //% blockId=sonar_ping block="Ping \ntrig %trig \necho %echo \nUnit %unit"
+    //% blockId=sonar_ping block="Ping||trig %trig||echo %echo||Unit %unit"
     //% tooltip="Measures the distance to an object using an ultrasonic sensor."
     export function ping(trig: DigitalPin, echo: DigitalPin, unit: PingUnit): number {
         const maxCmDistance = 500
