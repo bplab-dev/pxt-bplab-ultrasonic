@@ -30,7 +30,7 @@ This repository can be added as an **extension** in MakeCode.
 |-----------------------------|-----------------------------------------------|
 | [`ping`](#ping-measurement-block) | Measure distance using ultrasonic sensor |
 
-### Ping Measurement Block
+### 1. Ping Measurement Block
 
 - 🔹 Description
 
