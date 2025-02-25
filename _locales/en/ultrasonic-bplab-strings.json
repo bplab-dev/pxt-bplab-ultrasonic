@@ -2,7 +2,7 @@
   "PingUnit.Centimeters|block": "cm",
   "PingUnit.Inches|block": "inches",
   "PingUnit.MicroSeconds|block": "μs",
-  "ultrasonic.ping|block": "ping trig %trig|echo %echo|unit %unit",
+  "ultrasonic.ping|block": "Ping Trig %trig|Echo %echo|Unit %unit",
   "ultrasonic|block": "ultrasonic",
   "{id:category}Ultrasonic": "Ultrasonic"
 }

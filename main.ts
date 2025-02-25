@@ -14,14 +14,15 @@ enum PingUnit {
 namespace ultrasonic {
     /**
      * Send a ping and get the echo time (in microseconds) as a result
-     * @param trig tigger pin
-     * @param echo echo pin
-     * @param unit desired conversion unit
-     * @param maxCmDistance maximum distance in centimeters (default is 500)
+     * @param trig Trigger pin
+     * @param echo Echo pin
+     * @param unit Desired conversion unit
      */
-    //% blockId=sonar_ping block="ping trig %trig|echo %echo|unit %unit"
+    //% blockId=sonar_ping block="Ping Trig %trig|Echo %echo|Unit %unit"
     //% tooltip="Measures the distance to an object using an ultrasonic sensor."
-    export function ping(trig: DigitalPin, echo: DigitalPin, unit: PingUnit, maxCmDistance = 500): number {
+    export function ping(trig: DigitalPin, echo: DigitalPin, unit: PingUnit): number {
+        const maxCmDistance = 500
+
         // send pulse
         pins.setPull(trig, PinPullMode.PullNone);
         pins.digitalWritePin(trig, 0);
