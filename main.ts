@@ -24,7 +24,7 @@ namespace ultrasonic {
      */
     //% blockId=sonar_ping block="Ping|trig %trig|echo %echo|Unit %unit"
     //% tooltip="Measures the distance to an object using an ultrasonic sensor."
-    export function ping(trig: DigitalPin, echo: DigitalPin, unit: PingUnit): number {
+    export function ping(trig: DigitalPin = DigitalPin.P14, echo: DigitalPin = DigitalPin.P15, unit: PingUnit): number {
         const maxCmDistance = 500
 
         // send pulse

@@ -9,8 +9,8 @@
  */
 
 // Define trigger and echo pins
-const TRIG_PIN = DigitalPin.P1;
-const ECHO_PIN = DigitalPin.P2;
+const TRIG_PIN = DigitalPin.P14;
+const ECHO_PIN = DigitalPin.P15;
 
 // Function to test ultrasonic sensor readings
 function testUltrasonic(): boolean {
