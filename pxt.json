@@ -1,7 +1,7 @@
 {
     "name": "ultrasonic-bplab",
     "version": "1.0.8",
-    "description": "",
+    "description": "This extension is manufactured by BPLab to allow the ultrasonic module to be controlled with micro:bit.",
     "dependencies": {
         "core": "*"
     },
@@ -9,8 +9,6 @@
         "main.blocks",
         "main.ts",
         "README.md",
-        "_locales/en/ultrasonic-bplab-jsdoc-strings.json",
-        "_locales/en/ultrasonic-bplab-strings.json",
         "_locales/ko/ultrasonic-bplab-jsdoc-strings.json",
         "_locales/ko/ultrasonic-bplab-strings.json"
     ],

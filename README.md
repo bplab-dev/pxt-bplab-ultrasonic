@@ -39,20 +39,18 @@ This repository can be added as an **extension** in MakeCode.
     - Microseconds (μs)
     - Centimeters (cm)
     - Inches (inches)
-  - Default maximum distance is 500cm
 
 - 🔹 Parameters
   - `trig`: Trigger pin for the ultrasonic sensor
   - `echo`: Echo pin for the ultrasonic sensor
   - `unit`: Measurement unit (μs, cm, or inches)
-  - `maxCmDistance`: Maximum measurable distance in centimeters (optional)
 
 - ✅ Usage example
 
   ```blocks
-  let ms = ultrasonic.ping(DigitalPin.P1, DigitalPin.P2, PingUnit.MicroSeconds)
-  let cm = ultrasonic.ping(DigitalPin.P1, DigitalPin.P2, PingUnit.Centimeters)
-  let inches = ultrasonic.ping(DigitalPin.P1, DigitalPin.P2, PingUnit.Inches)
+  let ms = ultrasonic.ping(DigitalPin.P14, DigitalPin.P15, ultrasonic.PingUnit.MicroSeconds)
+  let cm = ultrasonic.ping(DigitalPin.P14, DigitalPin.P15, ultrasonic.PingUnit.Centimeters)
+  let inches = ultrasonic.ping(DigitalPin.P14, DigitalPin.P15, ultrasonic.PingUnit.Inches)
   ```
 
 ## 🔧 How it works

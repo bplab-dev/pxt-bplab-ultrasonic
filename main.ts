@@ -11,6 +11,7 @@ enum PingUnit {
  * Ultrasonic and ping utilities
  */
 //% color="#2c3e50" weight=1 icon="\uf0ad"
+//% block="Ultrasonic"
 namespace ultrasonic {
     /**
      * Send a ping and get the echo time (in microseconds) as a result
@@ -18,7 +19,7 @@ namespace ultrasonic {
      * @param echo Echo pin
      * @param unit Desired conversion unit
      */
-    //% blockId=sonar_ping block="Ping||Trig %trig||Echo %echo||Unit %unit"
+    //% blockId=sonar_ping block="Ping \ntrig %trig \necho %echo \nUnit %unit"
     //% tooltip="Measures the distance to an object using an ultrasonic sensor."
     export function ping(trig: DigitalPin, echo: DigitalPin, unit: PingUnit): number {
         const maxCmDistance = 500
