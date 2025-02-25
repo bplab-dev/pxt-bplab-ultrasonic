@@ -50,13 +50,9 @@ This repository can be added as an **extension** in MakeCode.
 - ✅ Usage example
 
   ```blocks
-  // Measure distance in centimeters using pins P1 and P2
-  let distance = ultrasonic.ping(DigitalPin.P1, DigitalPin.P2, PingUnit.Centimeters)
-  ```
-
-  ```blocks
-  // Measure distance in inches with custom maximum distance
-  let inches = ultrasonic.ping(DigitalPin.P1, DigitalPin.P2, PingUnit.Inches, 300)
+  let ms = ultrasonic.ping(DigitalPin.P1, DigitalPin.P2, PingUnit.MicroSeconds)
+  let cm = ultrasonic.ping(DigitalPin.P1, DigitalPin.P2, PingUnit.Centimeters)
+  let inches = ultrasonic.ping(DigitalPin.P1, DigitalPin.P2, PingUnit.Inches)
   ```
 
 ## 🔧 How it works
