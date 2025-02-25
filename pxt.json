@@ -1,6 +1,6 @@
 {
     "name": "ultrasonic-bplab",
-    "version": "1.0.13",
+    "version": "1.0.14",
     "description": "This extension is manufactured by BPLab to allow the ultrasonic module to be controlled with micro:bit.",
     "dependencies": {
         "core": "*"
