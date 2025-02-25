@@ -8,19 +8,19 @@ This extension allows you to measure distances using an ultrasonic sensor with t
 
 This repository can be added as an **extension** in MakeCode.
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **bplab-dev/pxt-bplab-ultrasonic** and import
+- open [https://makecode.microbit.org/](https://makecode.microbit.org/)
+- click on **New Project**
+- click on **Extensions** under the gearwheel menu
+- search for **bplab-dev/pxt-bplab-ultrasonic** and import
 
 ## 🚀 Features
 
-* Easy distance measurement using ultrasonic sensors
-* Support for multiple measurement units (microseconds, centimeters, inches)
-* Configurable maximum distance measurement
-* Simple block interface for easy integration
-* Can be registered as a MakeCode extension for easy use
-* Support for Korean
+- Easy distance measurement using ultrasonic sensors
+- Support for multiple measurement units (microseconds, centimeters, inches)
+- Configurable maximum distance measurement
+- Simple block interface for easy integration
+- Can be registered as a MakeCode extension for easy use
+- Support for Korean
 
 ## Blocks
 
@@ -32,28 +32,28 @@ This repository can be added as an **extension** in MakeCode.
 
 ### Ping Measurement Block
 
-* 🔹 Description
+- 🔹 Description
 
-  * Measures the distance to an object using an ultrasonic sensor
-  * Supports different measurement units:
-    * Microseconds (μs)
-    * Centimeters (cm)
-    * Inches (inches)
-  * Default maximum distance is 500cm
+  - Measures the distance to an object using an ultrasonic sensor
+  - Supports different measurement units:
+    - Microseconds (μs)
+    - Centimeters (cm)
+    - Inches (inches)
+  - Default maximum distance is 500cm
 
-* 🔹 Parameters
-  * `trig`: Trigger pin for the ultrasonic sensor
-  * `echo`: Echo pin for the ultrasonic sensor
-  * `unit`: Measurement unit (μs, cm, or inches)
-  * `maxCmDistance`: Maximum measurable distance in centimeters (optional)
+- 🔹 Parameters
+  - `trig`: Trigger pin for the ultrasonic sensor
+  - `echo`: Echo pin for the ultrasonic sensor
+  - `unit`: Measurement unit (μs, cm, or inches)
+  - `maxCmDistance`: Maximum measurable distance in centimeters (optional)
 
-* ✅ Usage example
+- ✅ Usage example
 
   ```blocks
   // Measure distance in centimeters using pins P1 and P2
   let distance = ultrasonic.ping(DigitalPin.P1, DigitalPin.P2, PingUnit.Centimeters)
   ```
-  
+
   ```blocks
   // Measure distance in inches with custom maximum distance
   let inches = ultrasonic.ping(DigitalPin.P1, DigitalPin.P2, PingUnit.Inches, 300)
@@ -66,9 +66,9 @@ The ultrasonic sensor sends out a pulse and measures the time it takes for the e
 1. Trigger pin sends a 10μs pulse
 2. Echo pin measures the return time
 3. Distance is calculated based on the selected unit:
-   * Centimeters = echo time / 58
-   * Inches = echo time / 148
-   * Microseconds = raw echo time
+   - Centimeters = echo time / 58
+   - Inches = echo time / 148
+   - Microseconds = raw echo time
 
 ## 📜 License
 
@@ -82,12 +82,12 @@ We are also leading the way in developing and distributing coding education kits
 
 Visit our websites:
 
-* Korea: [https://bplab.kr](https://bplab.kr)
-* Global: [https://bplab-us.com](https://bplab-us.com)
-* Japan: [https://bplab-jp.com](https://bplab-jp.com)
+- Korea: [https://bplab.kr](https://bplab.kr)
+- Global: [https://bplab-us.com](https://bplab-us.com)
+- Japan: [https://bplab-jp.com](https://bplab-jp.com)
 
 ## 📍 Supported targets
 
-* for PXT/microbit
+- for PXT/microbit
 
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
