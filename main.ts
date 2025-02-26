@@ -22,7 +22,7 @@ namespace ultrasonic {
      * @param echo Echo pin, eg: DigitalPin.P15
      * @param unit Desired conversion unit
      */
-    //% blockId=sonar_ping block="Ping|trig %trig|echo %echo|Unit %unit"
+    //% blockId=sonar_ping block="Ultrasonic|trig %trig|echo %echo|Unit %unit|Distance Value"
     //% tooltip="Measures the distance to an object using an ultrasonic sensor."
     //% inlineInputMode=external
     //% trig.fieldEditor="gridpicker"
