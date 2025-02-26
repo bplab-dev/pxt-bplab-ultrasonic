@@ -1,7 +1,7 @@
 /**
  * Ultrasonic and ping utilities
  */
-//% color="#2c3e50" weight=1 icon="\uf0ad"
+//% color="#2c3e50" weight=1 icon="\uf5c2"
 //% block="Ultrasonic"
 namespace ultrasonic {
     /**
@@ -52,6 +52,7 @@ namespace ultrasonic {
      * @param unit Desired conversion unit
      */
     //% subcategory="TEST"
+    //% color="#003e00" weight=1 icon="\u272a"
     //% blockId=sonar_ping2 block="Ping2 trig %trig|echo %echo|Unit %unit"
     //% tooltip="Measures the distance to an object using an ultrasonic sensor."
     export function ping2(trig: DigitalPin = DigitalPin.P14, echo: DigitalPin = DigitalPin.P15, unit: PingUnit): number {
