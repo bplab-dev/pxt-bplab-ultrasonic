@@ -8,24 +8,26 @@ namespace ultrasonic {
      * Ultrasonic Ping Unit
      */
     export enum PingUnit {
-        //% block="μs" enumval=0
+        //% block="μs"
         MicroSeconds,
-        //% block="cm" enumval=1
+        //% block="cm"
         Centimeters,
-        //% block="inches" enumval=2
+        //% block="inches"
         Inches
     }
 
     /**
      * Send a ping and get the echo time (in microseconds) as a result
-     * @param trig Trigger pin
-     * @param echo Echo pin
+     * @param trig Trigger pin, eg: DigitalPin.P14
+     * @param echo Echo pin, eg: DigitalPin.P15
      * @param unit Desired conversion unit
      */
     //% blockId=sonar_ping block="Ping|trig %trig|echo %echo|Unit %unit"
     //% tooltip="Measures the distance to an object using an ultrasonic sensor."
     //% inlineInputMode=external
-    export function ping(trig: DigitalPin = DigitalPin.P14, echo: DigitalPin = DigitalPin.P15, unit: PingUnit): number {
+    //% trig.fieldEditor="gridpicker"
+    //% echo.fieldEditor="gridpicker"
+    export function ping(trig: DigitalPin = DigitalPin.P14, echo: DigitalPin = DigitalPin.P15, unit: PingUnit = PingUnit.Centimeters): number {
         const maxCmDistance = 500
 
         // send pulse
