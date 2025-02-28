@@ -1,7 +1,7 @@
 /**
  * Ultrasonic and ping utilities
  */
-//% color="#2c3e50" weight=1 icon="\uf0ad"
+//% color="#2c3e50" weight=1 icon="\uf2ce"
 //% block="Ultrasonic"
 namespace ultrasonic {
     /**
